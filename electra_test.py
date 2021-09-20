@@ -1,4 +1,7 @@
+
 from common.read_text import *
+path = "../data/bbc-text.csv"
+train_texts,val_texts,test_texts,train_labels,val_labels,test_labels = data_reader(path)
 
 from transformers import ElectraTokenizer
 
