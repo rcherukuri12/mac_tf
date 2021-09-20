@@ -2,7 +2,7 @@ import tensorflow
 #from tensorflow.python.framework.ops import disable_eager_execution
 #disable_eager_execution()
 from tensorflow.python.compiler.mlcompute import mlcompute
-mlcompute.set_mlc_device(device_name='gpu')
+mlcompute.set_mlc_device(device_name='any')# 'cpu' or 'gpu' or 'any'
 
 from common.read_text import *
 
