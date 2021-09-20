@@ -15,7 +15,7 @@ model = TFElectraForSequenceClassification.from_pretrained('google/electra-small
 
 from common.fine_tune_and_eval import *
 
-pred_labels = fine_tune_and_eval(model,tokenizer,train_dataset,val_dataset,test_texts)
+pred_labels = fine_tune_and_eval(model,tokenizer,train_dataset,val_dataset,test_texts,10)
 preds       = pred_labels.tolist()
 #metrics
 from common.metrics import *
