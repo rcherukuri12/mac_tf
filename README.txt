@@ -10,12 +10,17 @@ https://raw.githubusercontent.com/mwidjaja1/DSOnMacARM/main/environment.yml
 
 https://github.com/apple/tensorflow_macos/issues/153
 
+3. STOP ...here if you want to stick to mac -gpu support...
 
-3. Then install 2.5 by doing:
+If you go to the next step, you get Tensorflow newer version, but will loose mac m1 gpu support.
+
+
+
+4. Then install 2.5 by doing:
 
 python -m pip install tensorflow-macos --upgrade --force --no-dependencies
 
-4.>python
+5.>python
 
 > import tensorflow as tf.
 
