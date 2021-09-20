@@ -18,8 +18,5 @@ from common.fine_tune_and_eval import *
 pred_labels = fine_tune_and_eval(model,tokenizer,train_dataset,val_dataset,test_texts)
 preds       = pred_labels.tolist()
 #metrics
-import numpy as np
-import matplotlib as plt
-import seaborn as sn
-from sklearn.metrics import confusion_matrix
-data = confusion_matrix(test_labels,preds)
+from common.metrics import *
+show_cm(test_labels,preds)
