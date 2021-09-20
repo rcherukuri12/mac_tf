@@ -1,5 +1,4 @@
-*.pyc
-*.png
+*.pyc 
 __pycache__/
 *.py[cod]
- 
+*.png
