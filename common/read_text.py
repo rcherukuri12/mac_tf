@@ -1,5 +1,5 @@
 import pandas as pd
-df = pd.read_csv("../data/text.csv")
+df = pd.read_csv("../data/bbc-text.csv")
 # basically add another column to encode category names as numbers
 df['encoded_cat']=df['category'].astype('category').cat.codes
 data_texts = df["text"].to_list() # features

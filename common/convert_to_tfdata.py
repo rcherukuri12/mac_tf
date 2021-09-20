@@ -12,6 +12,7 @@ def convert_to_tfdata(tokenizer,train_texts,val_texts,train_labels,val_labels):
   val_dataset = tf.data.Dataset.from_tensor_slices((
 			dict(val_encodings),
 			val_labels
+		))
   return train_dataset,val_dataset
 
 
